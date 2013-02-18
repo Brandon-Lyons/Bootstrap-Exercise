@@ -1,0 +1,191 @@
+<!doctype html>
+<html>
+<head>
+<title>Bootstrap Exercise</title>
+<!-- Bootstrap CSS Stylesheets -->
+<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="css/bootstrap-responsive.min.css">
+<!-- CSS changes -->
+<style type="text/css">
+#newsletter{
+	text-align: center;
+	background: rgba(95,192,206,0.4);
+}
+.navbar-inner{
+	background-image: linear-gradient(to bottom, #222222, #111111);
+	border-color: #252525;
+}
+.hero-unit{
+	background:#5FC0CE;
+}
+.row-fluid{
+	margin-top: 25px;
+}
+</style>
+<!-- Javascript and JQuery -->
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+	$('.dropdown-toggle').dropdown();   //Dropdown script
+	$('.carousel').carousel();          //Carousel script
+	$('#popover').popover()             //Popover script
+});
+
+</script>
+</head>
+<body>
+	<!-- Begin Navbar -->
+<div class="container" id="header-row">
+	<div class="row-fluid">
+	<div class="navbar navbar-fixed-top navbar-inverse">
+		<div class="navbar-inner">
+			<div class="container">
+			<a class="brand"href="#">Bootstrap Exercise</a>
+			<ul class="nav">
+				<li><a href="#">Home</a></li>
+				<li><a href="#">About</a></li>
+				<li><a href="#">Contact</a></li>
+				<li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown</a>
+					<ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
+						<li><a href="#">Dropdown 1</a></li>
+						<li><a href="#">Dropdown 2</a></li>
+						<li><a href="#">Dropdown 3</a></li>
+					</ul>
+				</li>
+			</ul>
+			<form class="navbar-search pull-right">
+				<input type="text" class="search-query" placeholder="Search">
+			</form>
+		</div>
+	</div>
+	</div>
+	</div>
+</div>
+<!-- End Navbar -->
+<div class="container">
+	<!-- Begin Hero Unit -->
+	<div class="row-fluid">
+		<div class="hero-unit">
+			<div class="row-fluid">
+				<!-- Hero Text Area -->
+			<div class="span6">
+			<h1>Hello, World!</h1>
+			<p>This is a template for a simple marketing or informational website. it includes a large callout called the hero unit and three supporting pieces of content. use it as a starting point to create something more unique.</p>
+			<p>
+			<a href="#" class="btn btn-info">Learn More>></a>
+			</p>
+			</div>
+			<!-- End Text Area -->
+			<!-- Hero Carousel -->
+			<div class="span6">
+			<div id="myCarousel" class="carousel slide">
+				<ol class="carousel-indicators">
+					<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+					<li data-target="#myCarousel" data-slide-to="1"></li>
+					<li data-target="#myCarousel" data-slide-to="2"></li>
+				</ol>
+				<div class="carousel-inner">
+					<div class="active item"><img src="img/carousel1.jpg" width="100%"></div>
+					<div class="item"><img src="img/carousel2.jpg" width="100%"></div>
+					<div class="item"><img src="img/carousel3.jpg" width="100%"></div>
+				</div>
+				<a class="carousel-control left" href="#myCarousel" data-slide="prev">&lsaquo;</a>
+				<a class="carousel-control right" href="#myCarousel" data-slide="next">&rsaquo;</a>
+			</div>
+		</div>
+		<!-- End Carousel -->
+		</div>
+		</div>
+	</div>
+	<!-- End Hero Unit -->
+	<!-- Alert Box -->
+	    <div class="alert alert-info fade in">
+    <button type="button" class="close" data-dismiss="alert">&times;</button>
+    <strong>Heads up!</strong> This alert box is simply here to give you some information!
+    </div>
+   <!--  End Alert -->
+   <!--Description row -->
+    <div class="row-fluid">
+    <div class="span9">
+    	<h3>This is what we do</h3>
+    	<p>
+    		Doenc id elit nom mi prota gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cilum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt molit anim id est laborum.
+    	</p>
+    	<!--Modal-->
+    	<p>
+    		<a href="#myModal" role="button" class="btn" data-toggle="modal">Launch Demo Modal</a>
+    	</p>
+    	<div id="myModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    		<div class="modal-header">
+    			<h3 id="myModalLabel">Modal Header</h3>
+    		</div>
+    		<div class="modal-body">
+    			<p>Lorizzle stuff dolor sure break it down, shiz adipiscing shizzle my nizzle crocodizzle. Nullizzle sapizzle velizzle, dawg volutpizzle, suscipizzle quizzle, gravida uhuh ... yih!, its fo rizzle. Pellentesque that's the shizzle tortizzle. Crunk brizzle. We gonna chung at dolizzle ma nizzle turpis tempus fo shizzle mah nizzle fo rizzle, mah home g-dizzle. Pizzle pellentesque nibh we gonna chung turpizzle. Owned izzle tortor. Pellentesque gangsta rhoncizzle fizzle. In things things platea dictumst. Donec ghetto. Break it down go to hizzle urna, pretizzle mofo, mattizzle pizzle, eleifend mah nizzle, nunc. Fo shizzle mah nizzle fo rizzle, mah home g-dizzle suscipizzle. You son of a bizzle sempizzle velizzle sizzle shiznit.</p>
+    		</div>
+    		<div class="modal-footer">
+    			<button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
+    		</div>
+    	</div>
+    	<!--End Modal-->
+    </div>
+    <div class="span3">
+    	<h3>Sidebar</h3>
+    	<p>
+    		Donec id elit nom mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.
+    	</p>
+    	<!--Popover-->
+    	<p>
+    		<a class="btn" data-content="Choose the form of your destructor!" title="" data-toggle="popover" data-original-title="Are you a God?" id="popover">View a popover</a>
+    	</p>
+<!--End Popover-->
+    </div>
+    </div>
+    <!--End Description row-->
+    <!--Description row 2-->
+    <div class="row-fluid">
+    	<div class="span4">
+    		<h4>Who We Are</h4>
+    		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    		<p>
+    			<a href="#" class="btn">Read more</a>
+    		</p>
+    	</div>
+    	<div class="span4">
+    		<h4>What We Do</h4>
+    		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    		<p>
+    			<a href="#" class="btn">Read more</a>
+    		</p>
+    	</div>
+    	<div class="span4">
+    		<h4>How We Work</h4>
+    		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    		<p>
+    			<a href="#" class="btn">Read more</a>
+    		</p>
+    	</div>
+    </div>
+    <!--End Description row 2-->
+    <!--Newsletter-->
+    <div class="row-fluid">
+    	<div class="span12" id="newsletter">
+    		<h4>Sign up for our newsletter</h4>
+    		Email address
+    		<div class="input-prepend">
+    			<button class="btn"><i class="icon-envelope"></i></button>
+    			<input class="span12" id="prependInput" type="text">
+    		</div>
+    	</div>
+    </div>
+    <!--End Newsletter-->
+    <!--Footer-->
+    <div class="row-fluid">
+    	<div class="span2" id="footer">
+    	<p>&#169;Company 2013</p>
+    	</div>
+    </div>
+    <!--End Footer-->
+</div>
+</body>
+</html>
